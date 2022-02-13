@@ -1,0 +1,2 @@
+# 最短路问题
+本文档包括两个文件，其中[classic_Dijkstra.py](classic_Dijkstra.py)为经典Dijkstra算法的代码实现（由于时间较久忘记实例的数据是哪来的了），[shortestPath_labeling_TW.py](shortestPath_labeling_TW.py)为带时间窗和负权值的最短路问题算法实现，一般可以用于求解VRPTW中列生成子问题，可以得到具有最小reduced cost的路径及其成本，其实例数据来自[标号法(label-setting algorithm)求解带时间窗的最短路问题](https://mp.weixin.qq.com/s/7Q1R98BGsyygpm9kcYSoQQ)，原文采用c++实现，本文件使用python实现，且保存了到每个节点的最短路径，以便在使用Gurobi或其他求解器时直接调用.
